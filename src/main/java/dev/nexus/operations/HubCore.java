@@ -32,12 +32,17 @@ public class HubCore extends JavaPlugin {
         registerEvents();
         registerProxy();
         registerCommands();
-        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&aPlugin enable"));
-        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&aCreated by Nexus Studio"));
+        sendMessageEnable();
+
     }
 
     public void onDisable(){
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&cPlugin disable"));
+    }
+
+    public void sendMessageEnable(){
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&aPlugin enable"));
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&aCreated by Nexus Studio"));
     }
 
     public void registerCommands(){
