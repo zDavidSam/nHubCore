@@ -33,6 +33,7 @@ public class HubCore extends JavaPlugin {
         registerProxy();
         registerCommands();
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&aPlugin enable"));
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&aCreated by Nexus Studio"));
     }
 
     public void onDisable(){
