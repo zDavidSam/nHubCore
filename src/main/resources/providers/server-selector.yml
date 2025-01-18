@@ -1,0 +1,39 @@
+# Server Selector Configuration
+servers:
+  survival:
+    name: "&aSurvival"
+    material: GRASS_BLOCK
+    lore:
+      - "&7Click to join the survival server!"
+      - "&7Players: &a0"
+    slot: 11
+    server-name: "survival"
+
+  skyblock:
+    name: "&bSkyBlock"
+    material: DIAMOND
+    lore:
+      - "&7Click to join the skyblock server!"
+      - "&7Players: &a0"
+    slot: 13
+    server-name: "skyblock"
+
+  prison:
+    name: "&6Prison"
+    material: IRON_BARS
+    lore:
+      - "&7Click to join the prison server!"
+      - "&7Players: &a0"
+    slot: 15
+    server-name: "prison"
+
+    # Users can add more servers here following the same format
+    # Example:
+    # kitpvp:
+    #   name: "&cKitPvP"
+    #   material: DIAMOND_SWORD
+    #   lore:
+    #     - "&7Click to join KitPvP!"
+    #     - "&7Players: &a0"
+    #   slot: 17
+    #   server-name: "kitpvp"

@@ -1,0 +1,62 @@
+main: dev.nexus.operations.HubCore
+version: 1.0.0
+name: nHubCore
+api-version: 1.13
+author: Nexus Solutions
+description: Simple Nexus HubCore
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  nhubcore:
+    description: Principal plugin command
+
+    ## gamemodes permissions
+  fly:
+    description: Fly Command
+
+  selector:
+    description: Command ServerSelector
+    usage: /selector
+    aliases:
+      - ssl
+
+  cosmetics:
+    description: Command Cosmetics
+    usage: /cosmetics
+
+
+    ## Gamemodes Commands
+  gmc:
+    description: Change gamemode to Creative
+    usage: /gmc
+  gms:
+    description: Change gamemode to Survival
+    usage: /gms
+  gma:
+    description: Change gamemode to Adventure
+    usage: /gma
+  gmsp:
+    description: Change gamemode to Spectator
+    usage: /gmsp
+
+permissions:
+  nexus.gamemode.*:
+    description: Allows access to all gamemode commands
+    children:
+      nexus.gamemode.creative: true
+      nexus.gamemode.survival: true
+      nexus.gamemode.adventure: true
+      nexus.gamemode.spectator: true
+  nexus.gamemode.creative:
+    description: Allows changing to creative mode
+    default: op
+  nexus.gamemode.survival:
+    description: Allows changing to survival mode
+    default: op
+  nexus.gamemode.adventure:
+    description: Allows changing to adventure mode
+    default: op
+  nexus.gamemode.spectator:
+    description: Allows changing to spectator mode
+    default: op
